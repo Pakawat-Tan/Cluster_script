@@ -53,7 +53,7 @@ RUN wget https://developer.download.nvidia.com/compute/cuda/12.3.0/local_install
     apt-get -y install cuda-toolkit-12-3 && \
     rm -f cuda-repo-ubuntu2204-12-3-local_12.3.0-545.23.06-1_amd64.deb
 
-# Install cuDNN  8.9.7
+# Install cuDNN  9.3.0.75
 # You can download the file from NVIDIA or click the link:
 # https://developer.download.nvidia.com/compute/cudnn/redist/cudnn/linux-x86_64/cudnn-linux-x86_64-9.3.0.75_cuda12-archive.tar.xz
 # After downloading the file to your PC, you can move the file to the folder containing the Dockerfile and build the Docker image.
