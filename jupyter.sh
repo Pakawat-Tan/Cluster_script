@@ -1,10 +1,10 @@
 #!/bin/sh
-#SBATCH --time=01:00:00
+#SBATCH --time=08:00:00
 #SBATCH -p gpu
 #SBATCH --signal=USR2
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
-#SBATCH --mem=10240
+#SBATCH --mem=12G
 #SBATCH --gres=gpu:2g.10gb:1
 #SBATCH --qos=custom
 #SBATCH --output=job.jupyter.%j
