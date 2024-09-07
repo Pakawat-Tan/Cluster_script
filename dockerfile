@@ -55,14 +55,14 @@ RUN wget https://developer.download.nvidia.com/compute/cuda/12.3.0/local_install
 
 # Install cuDNN  8.9.7
 # You can download the file from NVIDIA or click the link:
-# https://developer.nvidia.com/downloads/compute/cudnn/secure/8.9.7/local_installers/12.x/cudnn-linux-x86_64-8.9.7.29_cuda12-archive.tar.xz
+# https://developer.download.nvidia.com/compute/cudnn/redist/cudnn/linux-x86_64/cudnn-linux-x86_64-9.3.0.75_cuda12-archive.tar.xz
 # After downloading the file to your PC, you can move the file to the folder containing the Dockerfile and build the Docker image.
-COPY cudnn-linux-x86_64-8.9.7.29_cuda12-archive.tar.xz /tmp/
-RUN tar -xvf /tmp/cudnn-linux-x86_64-8.9.7.29_cuda12-archive.tar.xz -C /tmp && \
-    cp -r /tmp/cudnn-linux-x86_64-8.9.7.29_cuda12-archive/include/cudnn*.h /usr/local/cuda-12.3/include && \
-    cp -r /tmp/cudnn-linux-x86_64-8.9.7.29_cuda12-archive/lib/libcudnn* /usr/local/cuda-12.3/lib64 && \
+COPY cudnn-linux-x86_64-9.3.0.75_cuda12-archive.tar.xz /tmp/
+RUN tar -xvf /tmp/cudnn-linux-x86_64-9.3.0.75_cuda12-archive.tar.xz -C /tmp && \
+    cp -r /tmp/cudnn-linux-x86_64-9.3.0.75_cuda12-archive/include/cudnn*.h /usr/local/cuda-12.3/include && \
+    cp -r /tmp/cudnn-linux-x86_64-9.3.0.75_cuda12-archive/lib/libcudnn* /usr/local/cuda-12.3/lib64 && \
     chmod a+r /usr/local/cuda-12.3/include/cudnn*.h /usr/local/cuda-12.3/lib64/libcudnn* && \
-    rm -rf /tmp/cudnn-linux-x86_64-8.9.7.29_cuda12-archive*
+    rm -rf /tmp/cudnn-linux-x86_64-9.3.0.75_cuda12-archive*
 
 # Install TensorRT 10.1.0
 RUN wget https://developer.nvidia.com/downloads/compute/machine-learning/tensorrt/10.1.0/tars/TensorRT-10.1.0.27.Linux.x86_64-gnu.cuda-12.4.tar.gz && \
