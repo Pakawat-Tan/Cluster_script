@@ -52,7 +52,7 @@ When done using Jupyter Notebook, terminate the job by:
 
 END
 
-singularity exec --nv /data/home/$user/ubuntu_custom_v.1.1.sif \
+singularity exec --nv /data/home/$user/ubuntu_custom_v.1.5.sif \        #you can edit version ubuntu_custom
 	jupyter-notebook --no-browser --port=${PORT} --ip=0.0.0.0
 
 
