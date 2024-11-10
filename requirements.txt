@@ -29,3 +29,5 @@ dask-ml
 optuna
 TPOT
 ray
+ipywidgets
+IPython
