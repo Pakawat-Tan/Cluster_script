@@ -1,0 +1,30 @@
+# ========================================
+# requirements_tensorflow.txt
+# For TensorFlow environment (Python 3.10+)
+# ========================================
+
+# TensorFlow Core & CUDA Ecosystem 
+# Note: Pinning ensures pip doesn't fetch conflicting versions
+tensorflow[and-cuda]==2.20.0
+
+# Computer Vision
+opencv-python>=4.8.0
+ultralytics>=8.0.0
+roboflow>=1.0.0
+supervision>=0.16.0
+
+# Gradient Boosting
+xgboost>=2.0.0
+lightgbm>=4.0.0
+catboost>=1.2.0
+
+# NLP
+transformers>=4.30.0
+spacy>=3.6.0
+nltk>=3.8.0
+textblob>=0.17.0
+gensim>=4.3.0
+
+# AutoML / Tuning
+TPOT>=0.12.0
+ray[tune]>=2.5.0

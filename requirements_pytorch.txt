@@ -1,0 +1,32 @@
+# ========================================
+# requirements_pytorch.txt
+# For PyTorch environment
+# ========================================
+# PyTorch will be installed from CUDA wheel
+--index-url https://download.pytorch.org/whl/cu124
+
+torch==2.4.0+cu124
+torchvision==0.19.0+cu124
+torchaudio==2.4.0+cu124
+
+# Computer Vision
+opencv-python>=4.8.0
+ultralytics>=8.4.77
+roboflow>=1.0.0
+supervision>=0.16.0
+
+# Gradient Boosting
+xgboost>=2.0.0
+lightgbm>=4.0.0
+catboost>=1.2.0
+
+# NLP
+transformers>=4.30.0
+spacy>=3.6.0
+nltk>=3.8.0
+textblob>=0.17.0
+gensim>=4.3.0
+
+# AutoML
+TPOT>=0.12.0
+ray[tune]>=2.5.0
